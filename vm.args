@@ -1,0 +1,22 @@
+## Name of the node
+-name sqor_ft_rest@127.0.0.1
+
+## Cookie for distributed erlang
+-setcookie sq0rc00k!3
+
+## Heartbeat management; auto-restarts VM if it dies or becomes unresponsive
+## (Disabled by default..use with caution!)
+##-heart
+
+## Enable kernel poll and a few async threads
++K true
++A 64
+
+## Increase number of concurrent ports/sockets
++Q 262144
+
+## Tweak GC to run more often
+-env ERL_FULLSWEEP_AFTER 10
+
+## increasing the log file size for testing
+-env RUN_ERL_LOG_MAXSIZE 10000000

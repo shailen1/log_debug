@@ -1,0 +1,17 @@
+%%% {shailen.karur, priv/log_specs/Base.meta}
+%%%
+%%% These specifications can be used with backward compatibility for the most part, since they are considered as 'functional data'
+
+%%% Everything after a '%' is treated as a comment, and every statement is considered at an end by a period '.'.
+%%% ".erl" can be dropped from module names 
+
+%%% Drop your specifications for logging here, like so:
+
+
+%Active = yes, {module_name, function_name, [argument_list]}, log_file_name = "log_file_name.trace_log". 
+yes, {sfr_rest_events_handler, handle_search, [League, Offset, Limit, Sort, CurrentUserId]}, log_file_name = "rest_events_search.trace_log".
+yes, {sfr_rest_search_handler, handle_query, [Query, Blocks, "*"]}, log_file_name = "rest_search_handler.trace_log".
+
+
+no, {sfr_auth, user_id_from_req_token, [Req]}, log_file_name = "sfr_auth.trace_log".
+no, {sfr_queries, binary_join_with_space, [Ids]}, log_file_name = "queries_to_Solr.trace_log".

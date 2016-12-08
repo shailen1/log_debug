@@ -1,0 +1,19 @@
+## Name of the node
+-name sqor_ft_rest@prod-sqor-ft-rest3.localdomain
+
+## Cookie for distributed erlang
+-setcookie sq0rc00k!3
+
+## Heartbeat management; auto-restarts VM if it dies or becomes unresponsive
+## (Disabled by default..use with caution!)
+##-heart
+
+## Enable kernel poll and a few async threads
++K true
++A 128
+
+## Increase number of concurrent ports/sockets
++Q 262144
+
+## Tweak GC to run more often
+-env ERL_FULLSWEEP_AFTER 10
