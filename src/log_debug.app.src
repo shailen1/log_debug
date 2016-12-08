@@ -1,0 +1,15 @@
+{application, log_debug,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {modules, []},
+  {mod, { log_debug_app, []}},
+  {env, [
+    {host, []}
+  ]}
+ ]}.

@@ -1,0 +1,13 @@
+# -*- mode: Makefile; fill-column: 80; comment-column: 75; -*-
+
+dep_timing      = git git@github.com:lpgauth/timing.git master
+dep_eflame      = git git@github.com:proger/eflame.git master
+dep_base64url   = git git://github.com/dvv/base64url.git v1.0
+dep_cowboy      = git git://github.com/ninenines/cowboy.git dbb6360
+dep_cowboy_cors = git git@github.com:Amplify-Social/cowboy_cors.git master
+dep_configgins  = git git@github.com:Amplify-Social/Configgins.git master
+dep_sqor_logger = git git@github.com:Amplify-Social/sqor_logger.git master
+dep_resterl     = git git@github.com:Amplify-Social/resterl.git stage
+dep_sqor_riak   = git git@github.com:Amplify-Social/sqor_riak.git stage
+dep_feed_tools  = git git@github.com:Amplify-Social/feed_tools.git master
+dep_fightmetric = git git@github.com:Amplify-Social/fightmetric.git development
