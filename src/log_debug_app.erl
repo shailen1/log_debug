@@ -10,11 +10,13 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
-    sqor_logger:info("Starting application log_debug"),
+    %A = application:start(sqor_logger),
+    %io:format("start sqor_logger with result ~p~n", [A]),
+    %sqor_logger:info("Starting application log_debug"),
     %% entity_cache:start(),
     %%start_webserver(),
-    D = application:start(fs),
-    io:format("start fs with result ~p~n", [D]),
+    %%D = application:start(fs),
+    %%io:format("start fs with result ~p~n", [D]),
 
 
     log_debug_sup:start_link().
